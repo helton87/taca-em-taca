@@ -3,27 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Taça em Taça — aprenda a sentir o vinho</title>
-<meta name="description" content="A cada taça, um ritual para apreciar a cor, descobrir os aromas e explorar os sabores. O Taça em Taça ensina você a sentir o vinho.">
+<title>Taça em Taça — treine seu paladar</title>
+<meta name="description" content="Treine seu paladar, taça em taça. Degustação guiada, roda de aromas e sommelier de IA para você aprender a sentir o vinho.">
 
 <!-- Open Graph / WhatsApp / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Taça em Taça">
-<meta property="og:title" content="Taça em Taça — aprenda a sentir o vinho">
-<meta property="og:description" content="A cada taça, um ritual para apreciar a cor, descobrir os aromas e explorar os sabores.">
-<meta property="og:url" content="https://helton87.github.io/taca-em-taca/baixar.html">
-<meta property="og:image" content="https://helton87.github.io/taca-em-taca/og-image.png">
-<meta property="og:image:secure_url" content="https://helton87.github.io/taca-em-taca/og-image.png">
+<meta property="og:title" content="Taça em Taça — treine seu paladar">
+<meta property="og:description" content="Degustação guiada · roda de aromas · sommelier de IA.">
+<meta property="og:url" content="https://tacaemtaca.com.br/">
+<meta property="og:image" content="https://tacaemtaca.com.br/og-image.png">
+<meta property="og:image:secure_url" content="https://tacaemtaca.com.br/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Taça em Taça — aprenda a sentir o vinho">
+<meta property="og:image:alt" content="Taça em Taça — treine seu paladar">
 <meta property="og:locale" content="pt_BR">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Taça em Taça — aprenda a sentir o vinho">
-<meta name="twitter:description" content="A cada taça, um ritual para apreciar a cor, descobrir os aromas e explorar os sabores.">
-<meta name="twitter:image" content="https://helton87.github.io/taca-em-taca/og-image.png">
+<meta name="twitter:title" content="Taça em Taça — treine seu paladar">
+<meta name="twitter:description" content="Degustação guiada · roda de aromas · sommelier de IA.">
+<meta name="twitter:image" content="https://tacaemtaca.com.br/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,15 +47,21 @@
   .brand{display:flex;align-items:center;gap:9px;color:var(--gold);font-weight:600;
     font-size:12px;letter-spacing:3px;justify-content:center;margin-bottom:26px}
   .brand .d{width:5px;height:5px;background:var(--gold);transform:rotate(45deg)}
-  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(34px,8vw,56px);
-    margin:0 0 10px;letter-spacing:.3px;line-height:1.08}
-  .sub{color:var(--muted);font-size:clamp(15px,4vw,18px);max-width:460px;margin:0 auto 34px}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(32px,7.5vw,52px);
+    margin:0 0 12px;letter-spacing:.3px;line-height:1.1}
+  .sub{color:var(--muted);font-size:clamp(14.5px,3.8vw,17px);max-width:440px;margin:0 auto 34px}
   .glass{height:clamp(150px,34vw,196px);width:auto;margin:0 auto 20px;display:block;opacity:.96}
-  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#2A1C07;
-    font-weight:600;font-size:16px;text-decoration:none;padding:15px 26px;border-radius:999px;
-    box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .12s ease}
+  .stores{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:11px;background:var(--surface);
+    color:var(--ink);text-decoration:none;padding:12px 22px;border-radius:16px;
+    border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.35);
+    transition:transform .12s ease,border-color .2s ease}
+  .btn:hover{border-color:var(--gold)}
   .btn:active{transform:scale(.97)}
-  .soon{color:var(--muted);font-size:13px;margin-top:18px}
+  .btn .ic{width:26px;height:26px;display:flex;align-items:center;justify-content:center;flex:none}
+  .btn .lbl{display:flex;flex-direction:column;line-height:1.15;text-align:left}
+  .btn .lbl small{font-size:10.5px;color:var(--muted);letter-spacing:.4px;font-weight:500}
+  .btn .lbl b{font-size:16px;font-weight:600;letter-spacing:.2px}
   footer{margin-top:46px;color:var(--muted);font-size:12.5px}
   footer a{color:var(--muted)}
 </style>
@@ -65,18 +71,40 @@
 
   <img class="glass" src="glass.png" alt="" aria-hidden="true">
 
-  <h1>Aprenda a<br>sentir o vinho</h1>
-  <p class="sub">A cada taça, um ritual para apreciar a cor, descobrir os aromas e explorar os sabores.</p>
+  <h1>Treine seu paladar,<br>taça em taça 🍷</h1>
+  <p class="sub">Degustação guiada · roda de aromas · sommelier de IA</p>
 
-  <a class="btn" href="https://apps.apple.com/br/app/id6796453714" id="appstore">
-    Baixar na App Store
-  </a>
+  <div class="stores">
+    <a class="btn" href="https://apps.apple.com/br/app/id6796453714" id="appstore">
+      <span class="ic">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+          <path d="M17.05 12.04c-.03-2.65 2.16-3.92 2.26-3.98-1.23-1.8-3.15-2.05-3.83-2.08-1.63-.16-3.18.96-4.01.96-.82 0-2.1-.94-3.46-.91-1.78.03-3.42 1.03-4.34 2.62-1.85 3.21-.47 7.96 1.33 10.56.88 1.27 1.93 2.7 3.3 2.65 1.32-.05 1.82-.85 3.42-.85 1.59 0 2.04.85 3.44.83 1.42-.03 2.32-1.3 3.19-2.58.99-1.48 1.4-2.91 1.42-2.98-.03-.02-2.73-1.05-2.76-4.15zM14.63 4.37c.73-.88 1.22-2.1 1.08-3.32-1.05.04-2.32.7-3.07 1.58-.67.78-1.26 2.02-1.1 3.21 1.17.09 2.36-.59 3.09-1.47z"/>
+        </svg>
+      </span>
+      <span class="lbl"><small>Baixar na</small><b>App Store</b></span>
+    </a>
 
-  <div class="soon">Em breve também no Google Play.</div>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=br.com.helton.adega" id="googleplay">
+      <span class="ic">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <defs>
+            <linearGradient id="gp" x1="6" y1="12" x2="19" y2="12" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#00D3FF"/>
+              <stop offset=".4" stop-color="#2ED47A"/>
+              <stop offset=".72" stop-color="#FFCE47"/>
+              <stop offset="1" stop-color="#FF4B5C"/>
+            </linearGradient>
+          </defs>
+          <path d="M6 3.4 19 12 6 20.6 Z" fill="url(#gp)"/>
+        </svg>
+      </span>
+      <span class="lbl"><small>Disponível no</small><b>Google Play</b></span>
+    </a>
+  </div>
 
   <footer>
-    <a href="https://helton87.github.io/taca-em-taca/">Privacidade</a> ·
-    <a href="https://helton87.github.io/taca-em-taca/exclusao.html">Excluir conta</a>
+    <a href="privacidade.html">Privacidade</a> ·
+    <a href="exclusao.html">Excluir conta</a>
   </footer>
 </body>
 </html>
