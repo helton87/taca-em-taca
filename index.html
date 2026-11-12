@@ -1,129 +1,110 @@
-<title>Política de Privacidade</title>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taça em Taça — treine seu paladar</title>
+<meta name="description" content="Treine seu paladar, taça em taça. Degustação guiada, roda de aromas e sommelier de IA.">
+
+<!-- Open Graph / WhatsApp / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Taça em Taça">
+<meta property="og:title" content="Taça em Taça — treine seu paladar">
+<meta property="og:description" content="Degustação guiada · roda de aromas · sommelier de IA.">
+<meta property="og:url" content="https://tacaemtaca.com.br/">
+<meta property="og:image" content="https://tacaemtaca.com.br/og-image.png">
+<meta property="og:image:secure_url" content="https://tacaemtaca.com.br/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Taça em Taça — treine seu paladar">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Taça em Taça — treine seu paladar">
+<meta name="twitter:description" content="Degustação guiada · roda de aromas · sommelier de IA.">
+<meta name="twitter:image" content="https://tacaemtaca.com.br/og-image.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
 <style>
   :root{
-    --bg:#F3EBDC; --surface:#FBF6EC; --ink:#2A181C; --muted:#7C6B5C;
-    --gold:#9A6B12; --line:rgba(42,24,28,.14); --wine:#7E2A38;
-  }
-  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
     --bg:#160F10; --surface:#1F1618; --ink:#F1E7DA; --muted:#9C8A7C;
-    --gold:#E3C877; --line:rgba(241,231,218,.14); --wine:#D98FA3;
-  }}
-  :root[data-theme="dark"]{
-    --bg:#160F10; --surface:#1F1618; --ink:#F1E7DA; --muted:#9C8A7C;
-    --gold:#E3C877; --line:rgba(241,231,218,.14); --wine:#D98FA3;
+    --gold:#E3C877; --line:rgba(241,231,218,.14); --wine:#3A1118; --glow:#782A38;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-    font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
-  .wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
-  header{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:8px}
-  .brand{display:flex;align-items:center;gap:9px;color:var(--gold);font-weight:600;font-size:12px;letter-spacing:2px}
+  html,body{margin:0}
+  body{
+    background:
+      radial-gradient(120% 90% at 72% 115%, rgba(120,42,56,.55), transparent 60%),
+      var(--wine);
+    color:var(--ink);
+    font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;
+    min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    padding:40px 22px;text-align:center;
+  }
+  .brand{display:flex;align-items:center;gap:9px;color:var(--gold);font-weight:600;
+    font-size:12px;letter-spacing:3px;justify-content:center;margin-bottom:26px}
   .brand .d{width:5px;height:5px;background:var(--gold);transform:rotate(45deg)}
-  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;margin:16px 0 6px;letter-spacing:.3px}
-  .meta{color:var(--muted);font-size:13.5px}
-  h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:34px 0 8px}
-  p,li{font-size:15.5px;color:var(--ink)}
-  p{margin:10px 0}
-  ul{margin:8px 0 8px;padding-left:20px}
-  li{margin:5px 0}
-  strong{font-weight:600}
-  a{color:var(--wine);text-decoration:underline;text-underline-offset:2px}
-  .note{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--gold);
-    border-radius:10px;padding:14px 16px;margin:18px 0;font-size:14px;color:var(--muted)}
-  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14.5px}
-  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{color:var(--muted);font-weight:600;font-size:12px;letter-spacing:.4px;text-transform:uppercase}
-  .fill{color:var(--wine);font-weight:600}
-  footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(32px,7.5vw,52px);
+    margin:0 0 12px;letter-spacing:.3px;line-height:1.1}
+  .sub{color:var(--muted);font-size:clamp(14.5px,3.8vw,17px);max-width:440px;margin:0 auto 34px}
+  .glass{height:clamp(150px,34vw,196px);width:auto;margin:0 auto 20px;display:block;opacity:.96}
+  .stores{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:11px;background:var(--surface);
+    color:var(--ink);text-decoration:none;padding:12px 22px;border-radius:16px;
+    border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.35);
+    transition:transform .12s ease,border-color .2s ease}
+  .btn:hover{border-color:var(--gold)}
+  .btn:active{transform:scale(.97)}
+  .btn .ic{width:26px;height:26px;display:flex;align-items:center;justify-content:center;flex:none}
+  .btn .lbl{display:flex;flex-direction:column;line-height:1.15;text-align:left}
+  .btn .lbl small{font-size:10.5px;color:var(--muted);letter-spacing:.4px;font-weight:500}
+  .btn .lbl b{font-size:16px;font-weight:600;letter-spacing:.2px}
+  footer{margin-top:46px;color:var(--muted);font-size:12.5px}
+  footer a{color:var(--muted)}
 </style>
+</head>
+<body>
+  <div class="brand"><span class="d"></span> TAÇA EM TAÇA</div>
 
-<div class="wrap">
-  <header>
-    <div class="brand"><span class="d"></span>TAÇA EM TAÇA</div>
-    <h1>Política de Privacidade</h1>
-    <div class="meta">Última atualização: <span class="fill">14 de setembro de 2026</span></div>
-  </header>
+  <img class="glass" src="glass.png" alt="" aria-hidden="true">
 
-  <p>Esta Política explica como o aplicativo <strong>Taça em Taça</strong>
-  (“app”, “nós”) coleta, usa, compartilha e protege os seus dados. Ao usar o
-  app, você concorda com o descrito aqui.</p>
+  <h1>Treine seu paladar,<br>taça em taça 🍷</h1>
+  <p class="sub">Degustação guiada · roda de aromas · sommelier de IA</p>
 
-  <p><strong>Controlador dos dados:</strong> Helton Luiz Bubniak, contato
-  <a href="mailto:helton87@gmail.com">helton87@gmail.com</a>.</p>
+  <div class="stores">
+    <a class="btn" href="https://apps.apple.com/br/app/id6796453714" id="appstore">
+      <span class="ic">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+          <path d="M17.05 12.04c-.03-2.65 2.16-3.92 2.26-3.98-1.23-1.8-3.15-2.05-3.83-2.08-1.63-.16-3.18.96-4.01.96-.82 0-2.1-.94-3.46-.91-1.78.03-3.42 1.03-4.34 2.62-1.85 3.21-.47 7.96 1.33 10.56.88 1.27 1.93 2.7 3.3 2.65 1.32-.05 1.82-.85 3.42-.85 1.59 0 2.04.85 3.44.83 1.42-.03 2.32-1.3 3.19-2.58.99-1.48 1.4-2.91 1.42-2.98-.03-.02-2.73-1.05-2.76-4.15zM14.63 4.37c.73-.88 1.22-2.1 1.08-3.32-1.05.04-2.32.7-3.07 1.58-.67.78-1.26 2.02-1.1 3.21 1.17.09 2.36-.59 3.09-1.47z"/>
+        </svg>
+      </span>
+      <span class="lbl"><small>Baixar na</small><b>App Store</b></span>
+    </a>
 
-  <h2>1. Quais dados coletamos</h2>
-  <table>
-    <tr><th>Categoria</th><th>O que é</th><th>Por quê</th></tr>
-    <tr><td>Conta</td><td>E-mail e, conforme o login, nome e foto de perfil (via Apple ou Google)</td><td>Criar e autenticar sua conta</td></tr>
-    <tr><td>Suas degustações</td><td>Vinhos, adegas, cores, aromas, sensações de boca, notas, memórias afetivas e avaliações que você registra</td><td>Guardar e mostrar a sua jornada</td></tr>
-    <tr><td>Fotos de rótulo</td><td>As fotos que você tira/escolhe para cadastrar um vinho</td><td>Ler o rótulo e ilustrar o vinho na sua adega</td></tr>
-    <tr><td>Uso de IA</td><td>Registro técnico das chamadas de IA (recurso, tokens, custo estimado), associado à sua conta</td><td>Controlar custos e aplicar limites justos de uso</td></tr>
-    <tr><td>Dados técnicos</td><td>Informações mínimas de funcionamento e diagnóstico</td><td>Manter o app estável e seguro</td></tr>
-  </table>
-  <p>Não coletamos dados sensíveis nem localização precisa. O app é destinado a
-  <strong>maiores de 18 anos</strong> e não é direcionado a crianças.</p>
-
-  <h2>2. Como usamos os dados</h2>
-  <ul>
-    <li>Fornecer o ritual de degustação, a sua adega e o histórico.</li>
-    <li>Gerar os recursos de inteligência artificial (comentário do sommelier,
-      leitura do rótulo, chat, informações de uva e de guarda).</li>
-    <li>Aplicar limites de uso de IA por plano, de forma justa.</li>
-    <li>Manter a segurança e melhorar o app.</li>
-  </ul>
-
-  <h2>3. Com quem compartilhamos (operadores)</h2>
-  <p>Não vendemos seus dados. Usamos prestadores que processam dados apenas para
-  o app funcionar:</p>
-  <ul>
-    <li><strong>Supabase</strong> — banco de dados, autenticação e armazenamento
-      das fotos de rótulo (servidores fora do Brasil).</li>
-    <li><strong>Google (Gemini)</strong> — os textos da sua degustação e as fotos
-      de rótulo são enviados para a IA do Google processar e devolver o resultado.
-      Usamos a API paga do Gemini, que, conforme os termos do Google, não usa
-      esse conteúdo para treinar os modelos.</li>
-    <li><strong>Apple</strong> e <strong>Google</strong> — quando você escolhe
-      entrar com “Sign in with Apple” ou com o Google.</li>
-  </ul>
-  <p>Como esses serviços operam em outros países, seus dados podem ser
-  <strong>transferidos e processados fora do Brasil</strong>, com salvaguardas
-  adequadas.</p>
-
-  <h2>4. Base legal (LGPD)</h2>
-  <p>Tratamos seus dados para: <strong>executar o contrato</strong> (prestar o
-  serviço que você pediu), com base no seu <strong>consentimento</strong> (por
-  exemplo, ao enviar uma foto para a IA ler) e no <strong>legítimo interesse</strong>
-  de manter o app seguro e sustentável.</p>
-
-  <h2>5. Por quanto tempo guardamos</h2>
-  <p>Guardamos seus dados enquanto a sua conta existir. Ao excluir a conta,
-  apagamos os seus dados pessoais (ver seção 7). Registros mínimos podem ser
-  mantidos quando exigidos por lei.</p>
-
-  <h2>6. Segurança</h2>
-  <p>Usamos conexões criptografadas e regras de acesso por linha (cada usuário só
-  acessa os próprios dados). Nenhum sistema é 100% infalível, mas trabalhamos
-  para proteger suas informações.</p>
-
-  <h2>7. Seus direitos</h2>
-  <p>Você pode acessar, corrigir, portar e excluir seus dados. A
-  <strong>exclusão da conta</strong> está disponível no próprio app, em
-  <strong>Ajustes → Conta → Excluir minha conta</strong> — ela apaga
-  permanentemente seus dados. Para qualquer solicitação, fale conosco pelo
-  e-mail de contato.</p>
-
-  <h2>8. Alterações</h2>
-  <p>Podemos atualizar esta Política. Mudanças relevantes serão indicadas pela
-  data de “Última atualização” no topo.</p>
-
-  <h2>9. Contato</h2>
-  <p>Dúvidas sobre privacidade? Escreva para
-  <a href="mailto:helton87@gmail.com">helton87@gmail.com</a>.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=br.com.helton.adega" id="googleplay">
+      <span class="ic">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <defs>
+            <linearGradient id="gp" x1="6" y1="12" x2="19" y2="12" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#00D3FF"/>
+              <stop offset=".4" stop-color="#2ED47A"/>
+              <stop offset=".72" stop-color="#FFCE47"/>
+              <stop offset="1" stop-color="#FF4B5C"/>
+            </linearGradient>
+          </defs>
+          <path d="M6 3.4 19 12 6 20.6 Z" fill="url(#gp)"/>
+        </svg>
+      </span>
+      <span class="lbl"><small>Disponível no</small><b>Google Play</b></span>
+    </a>
+  </div>
 
   <footer>
-    Taça em Taça — aplicativo para treinar o paladar. Beba com moderação.
+    <a href="privacidade.html">Privacidade</a> ·
+    <a href="exclusao.html">Excluir conta</a>
   </footer>
-</div>
+</body>
+</html>
